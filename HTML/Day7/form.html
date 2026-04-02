@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Book my show</title>
+    </head>
+    <body>
+       <center>
+        <h1>Book my show</h1>
+        <form action="book.php" method="post">
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="name" placeholder="Enter your name" required></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="email" placeholder="Enter your email" required></td>
+                </tr>
+                <tr>
+                    <td>Phone Number:</td>
+                    <td><input type="tel" name="phone" maxlength="10" placeholder="Enter your phone number" required>  </td>
+                </tr>
+                <tr>
+                    <td>Select Movie:</td>
+                    <td>
+                   <select name="" id="">
+                        <optgroup label="Movie">
+                        <option value="movie1">Theri</option>
+                        <option value="movie2">Thaai Kizhavi</option>
+                        <option value="movie3">Aazhi</option>
+                    </optgroup>
+                    </select>
+                   </td>
+                </tr>
+                <tr>
+                    <td>Number of tickets:</td>
+                    <td><input type="number" name="tickets" placeholder="Enter the number of tickets" required></td>
+                </tr>
+                <tr>
+                    <td>Date:</td>
+                    <td><input type="date" name="date" placeholder="Select a date" required></td>
+                </tr>
+            
+                <tr>
+                    <td>Gender:</td>
+                    <td><input type="radio" name="gender" value="male" required> Male</td>
+                    <td><input type="radio" name="gender" value="female" required> Female</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Book Now"></td>
+                    <td><input type="reset" value="Reset"></td>
+                </tr>
+            </table>
+        </form>
+        <table border="1">
+            <thead>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Movie</th>
+                <th>Tickets</th>
+                <th>Date</th>
+                <th>Gender</th>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Ranjith</td>
+                <td>ranjith@example.com</td>
+                <td>1234567890</td>
+                <td>Theri</td>
+                <td>2</td>
+                <td>2023-10-10</td>
+                <td>Male</td>
+            </tr>
+            </tbody>
+        </table>
+       </center>
+    </body>
+</html>

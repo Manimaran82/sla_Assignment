@@ -1,0 +1,22 @@
+.parent{
+    background-color: aqua;
+    color: bisque;
+   display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+}
+.child{
+    background-color: rgb(36, 166, 45);
+    color: rgb(193, 23, 63);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    
+}

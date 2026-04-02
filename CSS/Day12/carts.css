@@ -1,0 +1,27 @@
+.parent{
+    
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+}
+.child{
+    background-color: rgb(32, 22, 22);
+    color: white;
+    width: 200px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.child img{
+    width: 150px;
+    height: 180px;
+    padding: 20px;
+}
+.child button{
+   
+    border-radius: 20px;
+}

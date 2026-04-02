@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.parent{
+   
+    color: black;
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    
+}
+.sub{
+    background-color: blue;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   width: 200px;
+   height: 200px;
+   border: 1px solid black;
+   border-radius: 10px;
+   transition: 1s;
+}
+.sub button{
+    background-color: black;
+    color: white;
+}
+.sub button:hover{
+    background-color: orange;
+    transform: scale(1s);
+}
+@media(max-width:600px){ 
+    .parent{ 
+        grid-template-columns: 1fr; 
+        background-color: brown;
+    } 
+}

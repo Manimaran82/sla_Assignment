@@ -1,0 +1,25 @@
+.parent{
+    background-color:white
+   width: 100vb;
+   height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.child{
+    width: 150px;
+    height: 150px;
+    border: 10px;
+    border-color: black;
+    padding: 10px;
+}
+.child h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child img{
+    width: 100px;
+    height: 100px;
+}

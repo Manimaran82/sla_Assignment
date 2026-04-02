@@ -1,0 +1,32 @@
+.main{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.sub1{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: aliceblue;
+    z-index: 3;
+}
+.sub2{
+    position: relative;
+    width: 100px;
+    height: 100px;
+     background-color: rgb(214, 27, 27);
+    color: aliceblue;
+    z-index: 2;
+}
+.sub3{
+    position: relative;
+    width: 100px;
+    height: 100px;
+     background-color: rgb(2, 167, 76);
+    color: aliceblue;
+    z-index: 1;
+}

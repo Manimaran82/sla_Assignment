@@ -1,0 +1,30 @@
+.parent{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.child{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 190px;
+    padding: 10px;
+    gap: 20px;
+   
+}
+
+   
+   
+
+.child img{
+    width: 150px;
+    border-radius: 10px;
+    
+    
+}

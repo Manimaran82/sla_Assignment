@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vehicle Care 360°</title>
+
+<link rel="shortcut icon" href="./assets/img/7.png">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+/* REMOVE SPACE */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar{
+    background-color: #0d6efd;
+}
+.navbar a{
+    color: white !important;
+}
+
+/* ===== BIG BANNER ===== */
+.banner{
+    height: 90vh;
+    background: url('./assets/img/banner.jpg') center/cover no-repeat;
+}
+
+/* CARD */
+.card{
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+
+/* CALL BUTTON */
+.call-btn{
+    background-color: green;
+    color: white;
+    width: 100%;
+}
+.call-btn:hover{
+    background-color: darkgreen;
+}
+
+/* FOOTER */
+footer{
+    background-color: #0d6efd;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+
+    <a class="navbar-brand" href="#">
+      <img src="./assets/img/7.png" width="40">
+      Vehicle Care 360°
+    </a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+       
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<div class="container my-5">
+<h2 class="text-center mb-4">Our Services</h2>
+
+<div class="row g-4">
+
+<!-- Repair -->
+<div class="col-md-4">
+<div class="card w-75 container">
+<img src="./assets/img/1.jpg" class="card-img-top ">
+<div class="card-body text-center">
+<h5>Repair Service</h5>
+<p>Quick repair for all vehicles</p>
+<a href="register.html" class="btn call-btn">Call Now</a>
+</div>
+</div>
+</div>
+
+<!-- Puncture -->
+<div class="col-md-4">
+<div class="card w-75 container">
+<img src="./assets/img/2.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Puncture Help</h5>
+<p>Instant tyre repair service</p>
+<a href="register.html" class="btn call-btn">Call Now</a>
+</div>
+</div>
+</div>
+
+<!-- Fuel -->
+<div class="col-md-4">
+<div class="card w-75 container">
+<img src="./assets/img/3.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Fuel Delivery</h5>
+<p>Emergency petrol delivery</p>
+<a href="register.html" class="btn call-btn">Call Now</a>
+</div>
+</div>
+</div>
+
+<!-- Tow -->
+<div class="col-md-4">
+<div class="card w-75 container">
+<img src="./assets/img/4.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Towing Service</h5>
+<p>Safe vehicle towing</p>
+<a href="register.html" class="btn call-btn">Call Now</a>
+</div>
+</div>
+</div>
+
+<!-- Pickup -->
+<div class="col-md-4">
+<div class="card w-75 container">
+<img src="./assets/img/5.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Pickup & Drop</h5>
+<p>Doorstep service</p>
+<a href="register.html" class="btn call-btn">Call Now</a>
+</div>
+</div>
+</div>
+
+<!-- ALL VEHICLE -->
+<div class="col-md-4">
+<div class="card w-75 container" >
+<img src="./assets/img/6.png" class="card-img-top">
+<div class="card-body text-center">
+<h5>All Vehicle Support</h5>
+<p>Bike, Car, Auto, Truck</p>
+<a href="register.html" class="btn call-btn">Call Now</a>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+<h5>Vehicle Care 360°</h5>
+<p>All Vehicle Roadside Assistance</p>
+<p>📞 9876543210</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

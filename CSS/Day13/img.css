@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent img{
+    transition: 1s;
+}
+.parent img:hover{
+    transform: scale(2);
+}

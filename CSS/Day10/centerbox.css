@@ -1,0 +1,17 @@
+.parent{
+    background-color: brown;
+    color: black;
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.child{
+    background-color: aqua;
+    color: blue;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

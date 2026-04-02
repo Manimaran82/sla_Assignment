@@ -1,0 +1,16 @@
+<script>
+    const name =['mani','aravind','ajith','akash']
+    const search='n'
+    let result=[]
+
+    for(let i=0;i<name.length;i++){
+        let names = name[i].toLowerCase()
+        let key = search.toLowerCase()
+
+        if (names.includes(key)) {
+           result.push(name[i]) 
+        }
+    }
+    console.log(result);
+    
+</script>
