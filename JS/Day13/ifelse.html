@@ -1,0 +1,15 @@
+<script>
+    const num = new Promise((resolve, reject) => {
+        let number = 24;
+
+        if (number % 2 === 0) {
+            resolve();
+        } else {
+            reject();
+        }
+    });
+
+    num
+        .then(() => console.log("Even number"))
+        .catch(() => console.log("Odd number"));
+</script>

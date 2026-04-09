@@ -1,0 +1,14 @@
+<script>
+    const ticket =new Promise((resolve,reject)=>{
+        let booking =true
+        if (booking) {
+            resolve()
+        }
+        else{
+            reject()
+        }
+    })
+    ticket
+    .then(()=> console.log("booked successfully"))
+    .catch(()=> console.log("booked fails"))
+</script>

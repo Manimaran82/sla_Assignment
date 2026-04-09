@@ -1,0 +1,21 @@
+<script>
+    const run =()=>{
+        setTimeout(()=>{
+            console.log("Running...");
+            
+        },3000)
+    }
+    const end =()=>{
+        setTimeout(()=>{
+            console.log("Ending...");
+            
+        },5000)
+    }
+    const asynFunction = async()=>{
+        await run()
+        await end()
+        
+        
+    }
+    asynFunction()
+</script>
