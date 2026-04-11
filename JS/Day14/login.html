@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter the Name" id="name">
+    <input type="password" placeholder="Enter the password" id="password">
+    <button onclick="login()">Login</button>
+
+
+    <script>
+        const login =()=>{
+            const name=document.getElementById("name").value
+            const password=document.getElementById("password").value
+
+            const user=JSON.parse(localStorage.getItem("user"))
+
+            if (user &&
+                name===user.name &&
+                password===user.password
+            ) {
+                alert(" login successfully ")
+                localStorage.setItem("islogin","true")
+                
+            }
+            else{
+                alert("Invaild ...")
+            }
+        }
+    </script>
+
+</body>
+</html>

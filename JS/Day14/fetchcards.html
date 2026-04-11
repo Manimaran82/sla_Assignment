@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch cards</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-4">
+        <h2 class=" text-center mb-4">Products</h2>
+        <div class="row " id="box"></div>
+    </div>
+
+    <script>
+        const fect = async()=>{
+            const user = await fetch("https://dummyjson.com/products")
+            const res = await user.json()
+            const save =res.products
+
+            let cont =document.getElementById("box")
+            cont.innerHTML =""
+
+            save.forEach(fetchUser => {
+                 let card=document.createElement("div")
+                 card.className="col-md-3 mb-4"
+                 card.innerHTML=`
+                 <div class="card h-100 shadow">
+                    <img src="${fetchUser.thumbnail}" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">${fetchUser.title}</h4>
+                        <p class="card-text">${fetchUser.price}</p>
+                        <button class ="btn btn-primary w-100">Add to cards</button>
+                        </div>
+                    
+                    </div>
+                 
+                 `
+                 cont.appendChild(card)
+            });
+         
+        }
+           fect()
+    </script>
+</body>
+</html>
