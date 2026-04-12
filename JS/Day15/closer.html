@@ -1,0 +1,36 @@
+<script>
+    function makeCounter() {
+  let count = 0;
+  return function() {
+    count++;
+    return count;
+  };
+}
+
+const counter = makeCounter();
+
+console.log(counter());
+console.log(counter());
+
+function createBankAccount(initialBalance) {
+  let balance = initialBalance;
+
+  return {
+    deposit: (amount) => {
+      balance += amount;
+      return balance;
+    },
+    withdraw: (amount) => {
+      balance -= amount;
+      return balance;
+    },
+    getBalance: () => balance
+  };
+}
+
+const account = createBankAccount(1000);
+
+console.log(account.deposit(500));
+console.log(account.withdraw(200));
+console.log(account.getBalance());
+</script>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>innerHTML vs textContent vs innerText</title>
+</head>
+<body>
+
+<div id="box1"></div>
+<div id="box2"></div>
+<div id="box3"></div>
+
+<script>
+const el1 = document.getElementById('box1')
+const el2 = document.getElementById('box2')
+const el3 = document.getElementById('box3')
+
+el1.innerHTML = '<b>Bold Text</b>'
+el2.textContent = '<b>Bold Text</b>'
+el3.innerText = '<b>Bold Text</b>'
+</script>
+
+</body>
+</html>

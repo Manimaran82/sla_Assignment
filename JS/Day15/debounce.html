@@ -1,0 +1,30 @@
+<script>
+    function debounce(fn, delay) {
+    let timer;
+    return (...args) => {
+        clearTimeout(timer);
+        timer = setTimeout(() => fn(...args), delay);
+    };
+}
+
+function throttle(fn, limit) {
+    let last = 0;
+    return (...args) => {
+        if (Date.now() - last >= limit) {
+            last = Date.now();
+            fn(...args);
+        }
+    };
+}
+
+const input = document.getElementById("search");
+const debouncedSearch = debounce((e) => {
+    console.log("Search:", e.target.value);
+}, 500);
+input.addEventListener("input", debouncedSearch);
+
+const throttledScroll = throttle(() => {
+    console.log("Scroll event");
+}, 1000);
+window.addEventListener("scroll", throttledScroll);
+</script>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Delegation</title>
+</head>
+<body>
+
+<div id="btn-container"></div>
+
+<script>
+const container = document.querySelector('#btn-container')
+
+for (let i = 1; i <= 5; i++) {
+    const btn = document.createElement('button')
+    btn.textContent = 'Button ' + i
+    btn.dataset.id = i
+    container.append(btn)
+}
+
+container.addEventListener('click', (e) => {
+    if (e.target.tagName === 'BUTTON') {
+        console.log('Button:', e.target.dataset.id)
+    }
+})
+</script>
+
+</body>
+</html>

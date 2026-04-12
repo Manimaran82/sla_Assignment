@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Append vs AppendChild</title>
+</head>
+<body>
+
+<div id="box"></div>
+
+<script>
+const parent = document.getElementById("box")
+
+const p1 = document.createElement("p")
+p1.textContent = "appendChild example"
+
+parent.appendChild(p1)
+
+const p2 = document.createElement("p")
+p2.textContent = "append example"
+
+const span = document.createElement("span")
+span.textContent = " extra text"
+
+parent.append(p2, " Hello ", span)
+</script>
+
+</body>
+</html>

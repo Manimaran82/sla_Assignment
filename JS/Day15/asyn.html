@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Fetch</title>
+</head>
+<body>
+
+<h2>Posts</h2>
+<ul id="list"></ul>
+
+<script>
+async function fetchData(url) {
+    try {
+        const res = await fetch(url);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        return data;
+    } catch (err) {
+        console.error('Fetch failed:', err.message);
+    }
+}
+
+const loadData = async () => {
+    const data = await fetchData('https://jsonplaceholder.typicode.com/posts');
+    const list = document.getElementById('list');
+    data.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item.title;
+        list.append(li);
+    });
+};
+
+loadData();
+</script>
+
+</body>
+</html>

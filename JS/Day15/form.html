@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+</head>
+<body>
+    <form id="signForm">
+        <input type="text" placeholder="Enter the name" id="name">
+        <span id="nameError" style="color: red"></span>
+         <input type="email" placeholder="Enter the email" id="email">
+        <span id="emailError" style="color: red"></span>
+         <input type="password" placeholder="Enter the password" id="password">
+        <span id="passwordError" style="color: red"></span>
+
+        <button type="submit">Sign up</button>
+    </form>
+
+    <script>
+        const form =document.getElementById("signForm")
+        const name=document.getElementById("name")
+        const email=document.getElementById("email")
+        const password=document.getElementById("password")
+
+        const nameError=document.getElementById("nameError")
+        const emailError=document.getElementById("emailError")
+        const passwordError=document.getElementById("passwordError")
+
+
+        form.addEventListener("submit",(e)=>{
+            let vaild=true
+         
+            nameError.textContent=""
+            emailError.textContent=""
+            passwordError.textContent=""
+
+            if (!name.value.trim()) {
+               nameError.textContent="Enter the name" 
+               vaild=false
+            }
+            if (!email.value.trim()) {
+                emailError.textContent="Email required"
+                vaild=false
+            }
+            if (!password.value.trim()) {
+                passwordError.textContent="password required"
+                vaild=false
+            }
+            if (!vaild) {
+                e.preventDefault()
+            }
+
+        })
+    </script>
+</body>
+</html>

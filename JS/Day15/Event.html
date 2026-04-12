@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Flow</title>
+</head>
+<body>
+
+<div id="parent" style="padding:50px; background-color:lightblue;">
+    Parent
+    <button id="child">Click Me</button>
+</div>
+
+<script>
+const parent = document.getElementById('parent');
+const child = document.getElementById('child');
+
+parent.addEventListener('click', () => {
+    console.log('Parent Bubbling');
+}, false);
+
+parent.addEventListener('click', () => {
+    console.log('Parent Capturing');
+}, true);
+
+child.addEventListener('click', (e) => {
+    console.log('Child Clicked');
+    e.stopPropagation();
+});
+</script>
+
+</body>
+</html>

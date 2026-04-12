@@ -1,0 +1,33 @@
+<script>
+    var x = 1;
+var x = 10;
+
+function testVar() {
+    if (true) {
+        var a = 5;
+    }
+    console.log(a);
+}
+testVar();
+
+let y = 2;
+
+function testLet() {
+    if (true) {
+        let b = 10;
+        console.log(b);
+    }
+}
+testLet();
+
+const z = 3;
+
+const obj = { a: 1 };
+obj.a = 2;
+
+try {
+    obj = {};
+} catch (e) {
+    console.log("Error");
+}
+</script>

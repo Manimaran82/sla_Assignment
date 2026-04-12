@@ -1,0 +1,9 @@
+<script>
+    function isPalindrome(str) {
+  const clean = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+  return clean === [...clean].reverse().join('');
+}
+
+console.log(isPalindrome('racecar'));
+console.log(isPalindrome('A man a plan a canal Panama'));
+</script>

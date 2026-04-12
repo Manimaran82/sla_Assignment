@@ -1,0 +1,59 @@
+<script>
+    const obj1 = {
+  name: "Alice",
+  greet() {
+    console.log(this.name);
+  }
+};
+
+obj1.greet();
+
+function show() {
+  console.log(this);
+}
+
+show();
+
+"use strict";
+function showStrict() {
+  console.log(this);
+}
+
+showStrict();
+
+const obj2 = {
+  name: "Alice",
+  greetArrow: () => {
+    console.log(this.name);
+  }
+};
+
+obj2.greetArrow();
+
+function Person(n) {
+  this.name = n;
+}
+
+const p1 = new Person("John");
+console.log(p1.name);
+
+const button = document.createElement("button");
+button.innerText = "Click";
+document.body.appendChild(button);
+
+button.addEventListener("click", function () {
+  console.log(this);
+});
+
+function greet() {
+  console.log(this.name);
+}
+
+const user = { name: "Ram" };
+
+greet.call(user);
+greet.apply(user);
+
+const boundFunc = greet.bind(user);
+boundFunc();
+</script>

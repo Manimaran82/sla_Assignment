@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOM Append Example</title>
+<style>
+body { font-family: Arial; }
+.list-item { color: blue; margin: 5px 0; }
+</style>
+</head>
+<body>
+
+<h2>Dynamic List</h2>
+<ul id="list"></ul>
+<button onclick="addItem()">Add Item</button>
+
+<script>
+function addItem() {
+    const li = document.createElement('li');
+    li.textContent = 'New Item';
+    li.className = 'list-item';
+    document.querySelector('#list').appendChild(li);
+}
+</script>
+
+</body>
+</html>
