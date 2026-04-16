@@ -1,6 +1,6 @@
-import Form from "./components/form"
-import Logo from "./components/logo"
-import Table from "./components/table"
+import Form from "./components/Form"
+import Logo from "./components/Logo"
+import Table from "./components/Table"
 import Comment from "./components/Comment"
 
 
