@@ -1,6 +1,7 @@
 import Form from "./components/form"
 import Logo from "./components/logo"
 import Table from "./components/table"
+import Comment from "./components/Comment"
 
 
 const App =()=>{
@@ -8,7 +9,7 @@ const App =()=>{
   <Logo/>
   <Table/>
   <Form/>
-  
+  <Comment/>
   </>)
 }
 export default App
