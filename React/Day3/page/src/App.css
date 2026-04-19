@@ -1,0 +1,36 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.parent{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+
+}
+.child{
+    width: 150px;
+    height: 80px;
+    display: flex;
+     margin-left: 50px;
+     
+}
+.subchild {
+   display: flex;
+    gap: 30px;
+   margin-right: 50px;
+}
+.subchild a{
+    text-decoration: none;
+    color: white;
+
+}
